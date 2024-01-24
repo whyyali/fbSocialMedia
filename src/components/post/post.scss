@@ -1,0 +1,133 @@
+.post{
+    width: 100%;
+    border-radius: 12px;
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0 , 0, 0, 0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0 , 0, 0, 0.68);
+    margin: 30px 0px;
+
+    .postWrapper{
+        padding: 10px;
+
+        .postTop{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .postTopLeft{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+                .postProfileImage{
+                    height: 35px;
+                    width: 35px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+
+                .postUsername{
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+
+                .postDate{
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .postCenter{
+            margin: 20px 0px;
+
+            .postText{
+                font-size: 16px;
+            }
+
+            .postImage{
+                width: 100%;
+                margin-top: 20px;
+                max-height: 500px;
+                object-fit: contain;
+            }
+        }
+
+        .postBottom{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .postBottomLeft{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+
+                .likeIcon{
+                    height: 25px;
+                    width: 25px;
+                    cursor: pointer;
+                }
+
+                .postLikeCounter{
+                    font-size: 15px;
+                }
+            }
+
+            .postBottomRight{
+                .postBottomComment{
+                    font-size: 15px;
+                    cursor: pointer;
+                    border-bottom: 2px dashed gray;
+
+                    &:hover{
+                        border-bottom: 2px solid #BF3131;
+                    }
+                }
+
+            }
+        }
+
+        .postBottomHr{
+            margin: 10px 0px;
+        }
+
+        .postBottomButtons{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            .postBottomButton{
+                flex: 4;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer; 
+                border-radius: 12px;
+                padding: 4px;
+                color: #000;
+                gap: 4px;
+
+                .postButtonImage{
+                    font-size: 25px;
+                }
+
+                .postButton{
+                    font-size: 16px;
+                    background: transparent; 
+                    border: none;
+                    outline: none;
+
+                    &:hover{
+                        color: #FFF;
+                    }
+                }
+
+                &:hover{
+                    color: #FFF;
+                    background-color: #BF3131;
+                }
+            }
+        }
+    }
+}

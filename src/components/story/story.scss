@@ -1,0 +1,23 @@
+.story {
+    display: flex;
+    max-height: 300px;
+    width: 100%;
+
+    .storyWrapper {
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden; 
+        gap: 5px;
+        padding: 2px;
+        width: 100%;
+        margin: 7px;
+        border-radius: 12px;
+        
+        .storyCard {
+            display: flex;
+            width: 24%;
+            height: 100%;
+            flex-direction: row;
+        }
+    }
+}

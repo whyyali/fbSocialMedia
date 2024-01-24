@@ -29,6 +29,14 @@
                 align-items: center;
                 margin-bottom: 20px;
                 gap: 10px;
+                cursor: pointer;
+                padding: 4px 2px 2px 10px;
+                border-radius: 8px;
+
+                &:hover{
+                    background-color: #BF3131;
+                    color: #FFF ;
+                }
             }
         }
 
@@ -55,12 +63,20 @@
                 align-items: center;
                 gap: 10px;
                 margin-bottom: 15px;
+                cursor: pointer;
+                padding: 4px 2px 2px 10px;
+                border-radius: 8px;
 
                 .sidebarFriendImage{
                     height: 30px;
                     width: 30px;
                     border-radius: 50%;
                     object-fit: cover;
+                }
+
+                &:hover{
+                    background-color: #BF3131;
+                    color: #FFF ;
                 }
             }
         }

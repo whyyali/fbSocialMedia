@@ -1,0 +1,64 @@
+.card{
+      display: flex;
+      width: 100%;
+      height: 100%;
+
+    .cardWrapper{
+        display: flex;
+        position: relative;
+
+        .cardStoryImage {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .cardUserData{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            position: absolute;
+            gap: 200px;
+            margin-left: 10px;
+
+            .cardUserProfileImage {
+                height: 35px;
+                width: 35px;
+                object-fit: cover;
+                border-radius: 50%;
+                border: 2px solid blue;
+            }
+    
+
+            .cardBottom{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                position: relative;
+
+                .cardUsername {
+                    color: #FFF;
+                    font-size: 14px;
+                }
+
+                .addStory{
+                    display: flex;
+                    align-items: center;
+                    position: absolute;
+                    left: 45px;
+                    bottom: 15px;
+                    color: #FFF;
+                    background-color: #BF3131;
+                    padding: 7px;
+                    border-radius: 50%;
+                }
+
+            }
+
+           
+        }
+    }
+}
