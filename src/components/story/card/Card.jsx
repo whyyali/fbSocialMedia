@@ -10,7 +10,7 @@ const Card = (props) => {
                     <img src={storyProfileImage} alt="" className="cardUserProfileImage" />
                     <div className="cardBottom">
                         <span className="cardUsername">{storyUsername}</span>
-                        <span className={userProfile ? "addStory" : ""}>{userProfile}</span>
+                        <h1 className={userProfile ? "addStory" : "hide"}>+</h1>
                     </div>
                 </div>
             </div>

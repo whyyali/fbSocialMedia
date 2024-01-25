@@ -1,8 +1,17 @@
 import {MoreVert, ThumbUp, Comment, Share } from "@mui/icons-material";
 import "./post.scss";
+import { useState } from "react";
 
 const Post = (props) => {
-    const {post,userProfileImage, time, username, caption} = props;
+    const {post,userProfileImage, time, username, caption, liked, comment} = props;
+    const [like , setLike] = useState(liked);
+    const [isLike, setIsLike] = useState(false);   
+
+    const likeHandler = ()=>{
+        setLike(isLike ? like - 1 : like + 1);
+        setIsLike(!isLike);
+    }
+
   return (
     <div className="post">
        <div className="postWrapper">
@@ -24,15 +33,15 @@ const Post = (props) => {
                 <div className="postBottomLeft">
                     <img src="./like.png" alt="" className="likeIcon" />
                     <img src="./heart.png" alt="" className="likeIcon" />
-                    <span className="postLikeCounter">30 people like it</span>
+                    <span className="postLikeCounter" >{like} people like it</span>
                 </div>
                 <div className="postBottomRight">
-                    <span className="postBottomComment">9 comments</span>
+                    <span className="postBottomComment">{comment} comments</span>
                 </div>
             </div>
             <hr className="postBottomHr" />
             <div className="postBottomButtons">
-                    <div className="postBottomButton">
+                    <div className="postBottomButton" onClick={likeHandler}>
                         <ThumbUp className="postButtonImage" />
                         <span className="postButton">Like</span>
                     </div>

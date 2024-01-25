@@ -1,4 +1,226 @@
 .rightbar{
     flex: 3.5;
-    background-color: #eee;
+    
+    .rightbarWrapper{
+        padding: 20px 20px 0px 0px;
+
+        .birthdayContainer{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .birthdayImage{
+                width: 40px;
+                height: 40px;
+            }
+
+            .birthdayText{
+                font-size: 15px;
+                font-weight: 500;
+
+                b{
+                    border-bottom: 2px solid transparent;
+                    cursor: pointer;
+
+                    &:hover{
+                        border-bottom: 2px solid #BF3131;
+                    }
+                }
+            }
+        }
+
+        .rightbarHr{
+            margin: 15px 4px;
+        }
+
+        .rightbarFreindRequestList{
+            margin: 10px 0px;
+
+            .rightbarFriendRequestHeader{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-right: 20px;
+                
+                .righbarHeading{
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+
+                .rightbarAllFriendRequestList{
+                    font-size: 15px;
+                    color: blue;
+                    border-bottom: 2px solid blue;
+                    cursor: pointer;
+                }
+            }
+
+            .rightbarFriendId{
+                 display: flex;
+                 align-items: center;
+                 gap: 8px;
+                 padding: 14px 4px;
+                 margin: 20px 0px;
+                 background-color: #BF3131;
+                 border-radius: 20px;
+                 color: #eee;
+                 cursor: pointer;
+
+                 &:hover{
+                    background-color: #7D0A0A;
+                 }
+
+
+
+                .rightbarRequestImage{
+                    width: 50px;
+                    height: 50px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+
+                .rightbarRequestIdDetails{
+
+                     .rightbarRequestUsername{
+                        font-size: 16px;
+                        font-weight: bold;
+                        cursor: pointer;
+                        line-height: 30px;
+                     }
+
+                     .rightbarRequestMutualFriendBox{
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+
+                        .requestIdMutualFriendImage{
+                            display: flex;
+                            align-items: center;
+                            width: 15px;
+                            height: 15px;
+                            object-fit: cover;
+                            cursor: pointer;
+                            border-radius: 50%;
+                        }
+
+                        .requestIdMutualFriendText{
+                            font-size: 14px;
+                            margin-bottom: 3px;
+                            cursor: pointer;
+                        }
+                     }
+
+                     .requestConfirmationButtons{
+                        display: flex;
+                        padding: 4px;
+                        gap: 10px;
+                        align-items: center;
+
+                        .rightbarButton{
+                            padding: 4px 12px;
+                            font-size: 17px;
+                            border-radius: 8px;
+                            border: none;
+                            cursor: pointer;
+                        }
+                     }
+                }
+            }
+        }
+
+        .rightbarGroupCreation{
+
+            .rightbarGroupHeading{
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            .rightbarGroup{
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                margin: 15px 0px;
+                padding: 2px;
+                background-color: #BF3131;
+                color: #eee;
+                border-radius: 20px;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: #7D0A0A;
+                }
+
+
+                .rightbarGroupIcon{
+                    display: flex;
+                    align-items: center;
+                    font-size: 30px;
+                    padding: 8px;
+                    border-radius: 50%;
+                }
+
+                .rightbarGroupText{
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .rightbarTitle{
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .rightbarFriendList{
+            padding: 0%;
+            margin: 0%;
+            list-style: none;
+        
+
+            .rightbarFriend{
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+                border-radius: 12px;
+                padding: 4px 10px;
+                gap: 10px;
+                cursor: pointer;
+
+                    &:hover{
+                        color: #eee;
+                        background-color: #7D0A0A;
+                    }
+
+
+                .rightbarProfileImageContainer{
+                    position: relative;
+                    
+                    .rightbarProfileImage{
+                        width: 40px;
+                        height: 40px;
+                        object-fit: cover;
+                        border-radius: 50%;
+                    }
+
+                    .rightbarOnline{
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 50%;
+                        background-color: limegreen;
+                        position: absolute;
+                        top: -2px;
+                        right: 0px;
+                        border: 2px solid #FFF;
+                    }
+                }
+
+                .rightbarUsername{
+                    font-weight: 400;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
 }

@@ -30,6 +30,7 @@
                 object-fit: cover;
                 border-radius: 50%;
                 border: 2px solid blue;
+                cursor: pointer;
             }
     
 
@@ -48,12 +49,18 @@
                     display: flex;
                     align-items: center;
                     position: absolute;
-                    left: 45px;
+                    left: 50px;
                     bottom: 15px;
                     color: #FFF;
                     background-color: #BF3131;
-                    padding: 7px;
+                    padding: 4px;
                     border-radius: 50%;
+                    font-size: 25px;
+                    cursor: pointer;
+                }
+
+                .hide{
+                    display: none;
                 }
 
             }

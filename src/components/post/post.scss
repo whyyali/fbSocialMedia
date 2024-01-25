@@ -19,16 +19,25 @@
                 align-items: center;
                 gap: 10px;
 
+
                 .postProfileImage{
                     height: 35px;
                     width: 35px;
                     object-fit: cover;
                     border-radius: 50%;
+                    cursor: pointer;
                 }
 
                 .postUsername{
                     font-size: 15px;
                     font-weight: 600;
+                    cursor: pointer;
+                    user-select: none;
+                    border-bottom: 2px solid transparent;
+
+                    &:hover{
+                        border-bottom: 2px solid #BF3131;
+                    }
                 }
 
                 .postDate{
@@ -74,6 +83,7 @@
             }
 
             .postBottomRight{
+                 user-select: none;
                 .postBottomComment{
                     font-size: 15px;
                     cursor: pointer;
@@ -117,6 +127,7 @@
                     background: transparent; 
                     border: none;
                     outline: none;
+                    user-select: none;
 
                     &:hover{
                         color: #FFF;
