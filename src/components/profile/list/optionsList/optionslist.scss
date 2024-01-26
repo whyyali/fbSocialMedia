@@ -1,0 +1,41 @@
+.profileList{
+    background-color: #F3EDC8;
+    padding: 10px 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+
+    .profileListItem{
+        margin: 2px 8px;
+        font-size: 20px;
+        cursor: pointer;
+        user-select: none;
+        border-bottom: 2px solid transparent;
+        
+        &:hover{
+            border-bottom: 2px solid #BF3131;
+        }
+    }
+
+    .active{
+        color: #BF3131;
+        border-bottom: 2px solid #BF3131;
+    }
+
+     .moreHorizontal{
+        border-bottom: none;
+        border: 2px solid #FFF;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+        padding: 4px;
+        cursor: pointer;
+
+        &:hover{
+            border: 2px solid #BF3131;
+        }
+
+     }
+}

@@ -1,5 +1,6 @@
 import { Search , Person , Chat, Notifications} from '@mui/icons-material';
 import "./topbar.scss";
+import Profile from '../../pages/profile/Profile';
 
 const Topbar = () => {
   return (
@@ -35,7 +36,7 @@ const Topbar = () => {
             </div>
         </div>
         
-        <img src="/person/girl.jpg" alt="" className='topbarProfileImage' />
+        <img src="/person/girl.jpg" alt="" className='topbarProfileImage' onClick={<Profile />} />
       </div>   
     </div>
   )

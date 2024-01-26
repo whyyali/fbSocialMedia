@@ -1,0 +1,49 @@
+.sideCardBodyFriend {
+    height: calc(100vh - 40vh);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - 70vw);
+    margin-bottom: 20px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+
+    .sideCardFriendContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin: 0px 10px;
+
+        .sideCardFriendContainerItems {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            flex-wrap: wrap;
+            overflow: hidden;
+
+            .sideCardFriendImage {
+                width: 130px;
+                height: 120px;
+                object-fit: cover;
+                cursor: pointer;
+                border-radius: 4px;
+            }
+
+            .sideCardFriendText{
+                font-size: 18px;
+                margin-top: 2px;
+                cursor: pointer;
+                user-select: none;
+                font-weight: 600;
+                border-bottom: 2px solid transparent;
+
+                &:hover{
+                    border-bottom: 2px solid #BF3131;
+                }
+            }
+        }
+    }
+
+}

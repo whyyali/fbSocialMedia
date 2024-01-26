@@ -1,0 +1,53 @@
+.sideCardBody {
+    // height: calc(100vh - 60vh); 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    // width: calc(100vw - 70vw); 
+    margin-bottom: 20px; 
+
+    .sideCardForBio {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+
+        .sideCardBioHeading {
+            font-size: 18px;
+            font-weight: 600;
+            align-items: center;
+            margin: 0px auto;
+        }
+
+        .sideCardButtons {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 14px 0px;
+            gap: 10px;
+
+            .sideCardButton {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 12px 0px;
+                font-size: 18px;
+                background-color: #BF3131;
+                width: 90%;
+                color: #F1F1F1;
+                cursor: pointer;
+                user-select: none;
+                border-radius: 8px;
+
+                &:hover {
+                    background-color: #7D0A0A;
+                }
+
+            }
+        }
+
+
+    }
+}

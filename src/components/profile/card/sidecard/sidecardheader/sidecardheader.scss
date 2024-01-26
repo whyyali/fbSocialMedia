@@ -1,0 +1,26 @@
+.sideCardHeader {
+    height: calc(100vh - 95vh);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 25px;
+
+    .sideCardHeading {
+        font-size: 25px;
+        font-weight: bold;
+
+    }
+
+    .sideCardTopButton {
+        font-size: 19px;
+        color: blue;
+        cursor: pointer;
+        user-select: none;
+        border-bottom: 2px solid transparent;
+
+        &:hover {
+            border-bottom: 2px solid blue;
+        }
+    }
+
+}

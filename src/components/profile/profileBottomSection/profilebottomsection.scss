@@ -1,0 +1,14 @@
+.profileBottom{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+
+    .profileBottomLeft{
+        flex: 5;
+    }
+
+    .profileBottomRight{
+        flex: 7;
+    }
+
+}

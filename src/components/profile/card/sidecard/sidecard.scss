@@ -1,0 +1,13 @@
+.sideCard {
+    height: 400px;
+
+    .profileSideCard {
+        width: calc(100vw - 70vw);
+        border-radius: 8px;
+        margin-bottom: 20px;
+        height: calc(100vh - 40vh);
+        -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+        box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    }
+
+}
