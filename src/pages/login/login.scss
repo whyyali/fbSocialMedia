@@ -1,0 +1,93 @@
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+    .loginWrapper{
+        width: 70%;
+        height: 70%;
+        display: flex;
+
+        .loginLeft{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+
+            .loginLogo{
+                font-size: 50px;
+                font-weight: 700;
+                color: #BF3131;
+                user-select: none;
+            }
+
+            .loginDes{
+                font-size: 24px;
+            }
+        }
+
+        .loginRight{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .loginBox{
+                height: 300px;
+                padding: 10px;
+                background-color: #BF3131;
+                border-radius: 8px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .loginInput{
+                    height: 50px;
+                    border-radius: 10px;
+                    border: 2px solid #fff;
+                    font-size: 18px;
+                    outline: none;
+                    padding: 0px 10px;
+                }
+
+                .loginButton{
+                    height: 50px;
+                    border-radius: 10px;
+                    border: 2px solid transparent;
+                    background-color: #7D0A0A;
+                    color: #fff;
+                    cursor: pointer;
+                    font-size: 20px;
+
+                    &:hover{
+                        background-color: #BF3131;
+                        border: 2px solid #fff;
+                    }
+                }
+
+                .loginForgot{
+                    text-align: center;
+                    color: #7D0A0A;
+                    cursor: pointer;
+                    user-select: none;
+                }
+
+                .loginRegisterButton{
+                    width: 60%;
+                    height: 50px;
+                    border-radius: 10px;
+                    color: #fff;
+                    font-size: 20px;
+                    cursor: pointer;
+                    align-self: center;
+                    outline: none;
+                    background-color: #42b71a;
+                    border: none;
+                }
+            }
+        }
+    }
+}
